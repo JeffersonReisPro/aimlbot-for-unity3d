@@ -12,3 +12,7 @@ Or
 
 http://www.alicebot.org/aiml.html
 
+
+Donation:
+
+https://jeffkings.itch.io/aimlbot-for-unity-3d
