@@ -77,10 +77,16 @@ public class ChatWindowExampleMobileWeb : MonoBehaviour
         aimlFiles = Resources.LoadAll<TextAsset>("aiml");
         foreach (TextAsset aimlFile in aimlFiles)
         {
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.LoadXml(aimlFile.text);
-            aimlXmlDocumentListFileName.Add(aimlFile.name);
-            aimlXmlDocumentList.Add(xmlDoc);
+            try
+            {
+                XmlDocument xmlDoc = new XmlDocument();
+                xmlDoc.LoadXml(aimlFile.text);
+                aimlXmlDocumentListFileName.Add(aimlFile.name);
+                aimlXmlDocumentList.Add(xmlDoc);
+            }catch(System.Exception e)
+            {
+                Debug.LogWarning(e.ToString());
+            }
         }
     }
 
