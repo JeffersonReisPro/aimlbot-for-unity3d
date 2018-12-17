@@ -13,6 +13,7 @@ Or
 http://www.alicebot.org/aiml.html
 
 
-Donation:
+You can find the tutorial here:
+https://github.com/JeffersonReisPro/aimlbot-for-unity3d/wiki
 
-https://jeffkings.itch.io/aimlbot-for-unity-3d
+
